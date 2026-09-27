@@ -256,3 +256,11 @@ Alternatively, once the admin dashboard is configured (see [Deployment](#deploym
 - **GitHub:** [github.com/uroojbuilds](https://github.com/uroojbuilds)
 - **Medium:** [medium.com/@uroojbhatti35](https://medium.com/@uroojbhatti35)
 - **Dev.to:** [dev.to/codewithurooj](https://dev.to/codewithurooj)
+
+---
+
+<div align="center">
+
+**⭐ If you like this portfolio, consider starring the repo!**
+
+</div>

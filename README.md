@@ -13,7 +13,7 @@
 
 </div>
 
----
+
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@
 - [Roadmap](#roadmap)
 - [Contact](#contact)
 
----
+
 
 ## Preview
 
@@ -63,7 +63,7 @@
 
 </details>
 
----
+
 
 ## About
 
@@ -71,7 +71,7 @@ I chose Electrical Engineering because my interest in both hardware and software
 
 The site itself is fully data-driven (see [Customization Guide](#customization-guide)) and ships with a private, GitHub-OAuth-protected **admin dashboard** for managing projects, experience, education, certifications, and skills without touching code directly.
 
----
+
 
 ## Tech Stack
 
@@ -84,7 +84,7 @@ The site itself is fully data-driven (see [Customization Guide](#customization-g
 | **Icons** | Lucide React |
 | **Deployment** | Netlify (`@netlify/plugin-nextjs`) |
 
----
+
 
 ## Featured Projects
 
@@ -123,7 +123,7 @@ A real-time weapon detection model built with deep learning and computer vision 
 
 </details>
 
----
+
 
 ## Project Structure
 
@@ -159,7 +159,7 @@ drizzle.config.ts        Drizzle Kit configuration
 .env.example             Reference for all required environment variables
 ```
 
----
+
 
 ## Getting Started
 
@@ -182,7 +182,7 @@ npm run db:seed        # (optional) seed initial data
 
 See [Deployment](#deployment--netlify) below for what each variable in `.env.example` is for.
 
----
+
 
 ## Customization Guide
 
@@ -203,7 +203,7 @@ Alternatively, once the admin dashboard is configured (see [Deployment](#deploym
 - **Resume:** swap `public/resume.pdf`
 - **Contact form:** `components/sections/Contact.tsx` currently uses a placeholder Formspree endpoint (`https://formspree.io/f/YOUR_FORM_ID`). Create a free form at [formspree.io](https://formspree.io) and replace that value with your own endpoint before going to production.
 
----
+
 
 ## Deployment — Netlify
 
@@ -224,7 +224,7 @@ Alternatively, once the admin dashboard is configured (see [Deployment](#deploym
 
 6. *(Optional)* Add a custom domain under **Site settings → Domain management**.
 
----
+
 
 ## Troubleshooting
 
@@ -237,7 +237,7 @@ Alternatively, once the admin dashboard is configured (see [Deployment](#deploym
 | Admin sign-in fails / access denied | `ADMIN_EMAIL` must exactly match the email on the GitHub account you're signing in with — sign-in fails closed for every other account, even a valid OAuth login |
 | GitHub repository import returns few/no results | Add `GITHUB_TOKEN` — unauthenticated GitHub API requests are rate-limited much lower |
 
----
+
 
 ## Roadmap
 
@@ -247,7 +247,7 @@ Alternatively, once the admin dashboard is configured (see [Deployment](#deploym
 - [ ] Testimonials
 - [ ] YouTube section (pending content on [@techwithuroojofficial](https://youtube.com/@techwithuroojofficial))
 
----
+
 
 ## Contact
 
@@ -257,7 +257,7 @@ Alternatively, once the admin dashboard is configured (see [Deployment](#deploym
 - **Medium:** [medium.com/@uroojbhatti35](https://medium.com/@uroojbhatti35)
 - **Dev.to:** [dev.to/codewithurooj](https://dev.to/codewithurooj)
 
----
+
 
 <div align="center">
 

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #f5f4ee; /* warm cream — dominant page canvas */
+  --bg-surface: #ffffff; /* white cards, panels, form surfaces */
+  --border-default: #e4e1d6; /* warm neutral border */
+  --border-hover: rgba(15, 91, 102, 0.4); /* deep teal at moderate opacity */
+}
+
+* {
+  border-color: var(--border-default);
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+::selection {
+  background-color: rgba(15, 91, 102, 0.18);
+  color: #1e293b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 91, 102, 0.25);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 91, 102, 0.4);
+}
+
+/* Elevated white surface used for the scrolled nav bar, the mobile menu
+   panel, and the project modal. Replaces the old dark-mode glassmorphism
+   (backdrop-blur + translucent white) with a solid, physical white card —
+   the light-theme equivalent of the same "floating surface" role, without
+   the blur/glow effects that read as futuristic rather than premium. */
+.surface-elevated {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  box-shadow: 0 4px 24px rgba(30, 41, 59, 0.08);
+}
+
+/* Used sparingly — the logo mark and stat numbers — a restrained two-stop
+   teal-to-terracotta gradient echoing the two accent colors, not a
+   decorative rainbow/glow effect. */
+.text-gradient {
+  background: linear-gradient(120deg, #0f5b66, #e06d53);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    padding-inline: 48px;
+  }
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid #0f5b66;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
